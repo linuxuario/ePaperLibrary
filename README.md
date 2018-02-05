@@ -31,20 +31,23 @@ W.I.P
 
 
 
-## Usage
+## Usage (main.py)
 
 ```python
 import epsimplelib
 
-def hello():
+def hello_world():
 	esp = epsimplelib.EPScreen('landscape') # eps = e-Ink Paper Screen
-	esp.set_title("Sheldon Cooper")
+	esp.set_title("Hello world")
 
-	esp.add_line((100, 100, 150, 100))
+	esp.add_line((132, 70, 92, 135))
+	esp.add_line((92, 135, 172, 135))
+	esp.add_line((172, 135, 132, 70))
+
 	esp.update_screen()
-    
-hello()
-hello() # Physical screen not refreshed
+
+hello_world()
+hello_world() # Physical screen not refreshed if it is the same
 ```
 
 
